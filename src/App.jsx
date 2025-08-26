@@ -9,6 +9,17 @@ import Category from './Category';
 import Formiktag from './Formiktag';
 import FormikResult from './FormikResult';
 import Api from './Api'
+import BesicApi from './BesicApi'
+import ApiResult from './ApiResult';
+import UseRef from './Useref';
+import UseMemo from './UseMemo';
+import UseCallback from './UseCallback';
+import UseContext from './UseContext';
+import IncreDecre from './IncreDecre';
+import UsecontextTask from './UsecontextTask';
+import Store from './Redux/Store';
+import ButtonUI from './Redux/ButtonUI';
+import { Counter } from './Redux/Counter';
 
 function App() {
 
@@ -96,16 +107,26 @@ function App() {
 
         <button value="cdmi" onClick={(e) => console.log(e.target.value)
         }>click</button> */}
-      <Crud></Crud>
+      {/* <Crud></Crud>
       <Result></Result>
       <Category></Category>
       <Conditional></Conditional>
       <UseFormik></UseFormik>
-      {/* <FormikResult></FormikResult> */}
+      <FormikResult></FormikResult>
       <Formiktag></Formiktag>
-      <Api></Api>
+      <BesicApi></BesicApi>
+      <Api></Api> */}
+      {/* <ApiResult></ApiResult> */}
+      {/*  <UseRef></UseRef>
+      <UseMemo></UseMemo>
+      <UseCallback></UseCallback> */}
+      {/* <UseContext></UseContext> */}
+      {/* <IncreDecre></IncreDecre> */}
+      {/* <UsecontextTask></UsecontextTask> */}
+     
 
-      
+
+
     </>
   );
 }
