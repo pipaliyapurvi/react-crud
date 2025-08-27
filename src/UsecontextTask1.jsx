@@ -12,7 +12,7 @@ const UsecontextTask1 = () => {
                     <td>Name</td>
                     <td>Surname</td>
                     <td>Address</td>
-                    <td>Delete</td>
+                    <td>Delete</td> 
                     <td>Edit</td>
                 </tr>
 
