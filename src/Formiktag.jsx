@@ -42,8 +42,6 @@ const Formiktag = () => {
           copy.splice(index , 1)
           setList(copy)
       }
-     
-
     return (
         <div>
             <h1>-:Formik Tag crud:-</h1>

@@ -17,9 +17,8 @@ import UseCallback from './UseCallback';
 import UseContext from './UseContext';
 import IncreDecre from './IncreDecre';
 import UsecontextTask from './UsecontextTask';
-import Store from './Redux/Store';
-import ButtonUI from './Redux/ButtonUI';
-import { Counter } from './Redux/Counter';
+import ImageUpload from './ImageUpload';
+
 
 function App() {
 
@@ -112,10 +111,10 @@ function App() {
       <Category></Category>
       <Conditional></Conditional>
       <UseFormik></UseFormik>
-      <FormikResult></FormikResult>
-      <Formiktag></Formiktag>
-      <BesicApi></BesicApi>
-      <Api></Api> */}
+      <FormikResult></FormikResult>*/}
+      {/* <Formiktag></Formiktag> */}
+      {/* <BesicApi></BesicApi> */}
+      {/* <Api></Api> */}
       {/* <ApiResult></ApiResult> */}
       {/*  <UseRef></UseRef>
       <UseMemo></UseMemo>
@@ -123,7 +122,9 @@ function App() {
       {/* <UseContext></UseContext> */}
       {/* <IncreDecre></IncreDecre> */}
       {/* <UsecontextTask></UsecontextTask> */}
-     
+      <ImageUpload></ImageUpload>
+
+
 
 
 

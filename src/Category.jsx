@@ -29,11 +29,11 @@ const Category = () => {
       const filDs = data.filter((item) => item.category == category);
       setList(filDs);
     }
-   
+
   };
   return (
     <>
-    <h1>-:Category:-</h1>
+      <h1>-:Category:-</h1>
       <button onClick={() => myfunction("all")}>All</button>
       <button onClick={() => myfunction("flower")}>Flower</button>
       <button onClick={() => myfunction("animal")}>Animal</button>
