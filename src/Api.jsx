@@ -19,7 +19,7 @@ const Api = () => {
 
 
     function viewData() {
-        axios.get('https://generateapi.onrender.com/api/product', {
+        axios.get(' https://generateapi.techsnack.online/api/product', {
             headers: {
                 Authorization: token
             }
@@ -32,13 +32,11 @@ const Api = () => {
                 console.log(error);
             })
     }
-
-
     const handleSubmit = (values, { resetForm }) => {
         // console.log(values);
         const { _id, ...rest } = values
         if (editId != null) {
-            axios.patch(`https://generateapi.onrender.com/api/product/${editId}`, rest, {
+            axios.patch(`https://generateapi.techsnack.online/api/product/${editId}`, rest, {
                 headers: {
                     Authorization: token
                 }
@@ -55,10 +53,8 @@ const Api = () => {
                     console.log(error);
                 })
         }
-
-
         else {
-            axios.post('https://generateapi.onrender.com/api/product', values, {
+            axios.post('https://generateapi.techsnack.online/api/product', values, {
                 headers: {
                     Authorization: token
                 }
@@ -66,18 +62,14 @@ const Api = () => {
                 .then(() => {
                     viewData()
                     resetForm()
-
                 })
                 .catch((error) => {
                     console.log(error);
                 })
-
-
         }
-
     }
     const deleteData = (id) => {
-        axios.delete(` https://generateapi.onrender.com/api/product/${id}`, {
+        axios.delete(`https://generateapi.techsnack.online/api/product/${id}`, {
             headers: {
                 Authorization: token
             }
@@ -93,10 +85,6 @@ const Api = () => {
         setIni(item)
         setEditId(item._id)
     }
-
-
-
-
     return (
         <div>
             <Formik
@@ -135,6 +123,4 @@ const Api = () => {
         </div>
     )
 }
-
-
 export default Api

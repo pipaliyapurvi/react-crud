@@ -121,8 +121,8 @@ function App() {
       <UseCallback></UseCallback> */}
       {/* <UseContext></UseContext> */}
       {/* <IncreDecre></IncreDecre> */}
-      {/* <UsecontextTask></UsecontextTask> */}
-      <ImageUpload></ImageUpload>
+      <UsecontextTask></UsecontextTask>
+      {/* <ImageUpload></ImageUpload> */}
 
 
 

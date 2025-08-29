@@ -3,7 +3,7 @@ import { Field, Form, Formik } from 'formik'
 import React, { useState } from 'react'
 
 const ImageUpload = () => {
-    const [preview, setPreview] = useState(null); // To show image preview
+    const [preview, setPreview] = useState(null);
     const initialValues = {
         name: '',
         image: null
@@ -21,8 +21,8 @@ const ImageUpload = () => {
         })
             .then(() => {
                 console.log("Success");
-                resetForm();         // Clear the form
-                setPreview(null);    // Clear preview
+                resetForm();
+                setPreview(null);
             })
             .catch((error) => {
                 console.log(error);

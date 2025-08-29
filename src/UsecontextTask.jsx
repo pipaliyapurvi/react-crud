@@ -12,7 +12,6 @@ const UsecontextTask = () => {
 
   const handleData = () => {
     const obj = { name, surname, add };
-
     if (editIndex !== null) {
       const copy = [...list];
       copy[editIndex] = obj;
@@ -21,19 +20,16 @@ const UsecontextTask = () => {
     } else {
       setList([...list, obj]);
     }
-
     setName("");
     setSurname("");
     setAdd("");
   };
-
   const editData = (item, index) => {
     setName(item.name);
     setSurname(item.surname);
     setAdd(item.add);
     setEditIndex(index);
   };
-
   const deleteData = (index) => {
     const copy = [...list];
     copy.splice(index, 1);
@@ -69,7 +65,6 @@ const UsecontextTask = () => {
           {editIndex !== null ? "Update" : "Submit"}
         </button>
       </div>
-
       <br /><br />
       <dataContext.Provider value={{ list, deleteData, editData }}>
         <UsecontextTask1 />

@@ -7,7 +7,6 @@ const UsecontextTask1 = () => {
     return (
         <div>
             <table border={1}>
-
                 <tr>
                     <td>Name</td>
                     <td>Surname</td>
@@ -15,8 +14,6 @@ const UsecontextTask1 = () => {
                     <td>Delete</td>
                     <td>Edit</td>
                 </tr>
-
-
                 {list.map((item, index) => (
                     <tr key={index}>
                         <td>{item.name}</td>
@@ -30,10 +27,9 @@ const UsecontextTask1 = () => {
                         </td>
                     </tr>
                 ))}
-
             </table>
         </div>
-    );
-};
-
+    )
+}
 export default UsecontextTask1;
+
